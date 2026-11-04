@@ -4,6 +4,7 @@ A one-click local **author-led, full-book writing studio** for Windows x64. Brin
 
 ## What's included
 
+- **Book Production Conductor:** one durable author-led flow from chapter planning through queued draft generation, opt-in independent reader critiques, mandatory author decisions, whole-book editorial checks and publishing handoff. Includes local checkpoint history and a Prompt Context Inspector.
 - **Book Studio:** author-approved whole-book drafting, background generation, pause/resume, chapter editing and local reader critique.
 - **Whole-Book Editorial Board:** consolidated Prose Editor and Style Bible scan, reader/arc coverage, chapter priorities, author-approved batch corrections, and exportable editorial review.
 - **Prose Editor + Style Bible:** offline mechanical grammar suggestions, terminology consistency, reviewable exceptions, and rollback snapshots.
