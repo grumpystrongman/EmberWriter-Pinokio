@@ -5,6 +5,8 @@ A one-click local **author-led, full-book writing studio** for Windows x64. Brin
 ## What's included
 
 - **Book Studio:** author-approved whole-book drafting, background generation, pause/resume, chapter editing and local reader critique.
+- **Whole-Book Editorial Board:** consolidated Prose Editor and Style Bible scan, reader/arc coverage, chapter priorities, author-approved batch corrections, and exportable editorial review.
+- **Prose Editor + Style Bible:** offline mechanical grammar suggestions, terminology consistency, reviewable exceptions, and rollback snapshots.
 - **Revision Workbench:** evidence-backed suggestions and author-approved side-by-side alternatives.
 - **Story Arc Investigator + Dossier:** opt-in local AI analysis of narrative decisions, consequences, relationships and possible foreshadowing, all tied to exact source quotes.
 - **Manuscript Intelligence + Voiceprint Lab:** cross-chapter observations and comparison against your preferred authored prose rhythm.
