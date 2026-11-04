@@ -1,0 +1,6 @@
+{
+  "title": "EmberWriter",
+  "description": "Local-first fiction studio: manuscripts, characters, worldbuilding and local AI",
+  "platform": ["win32"],
+  "arch": ["x64"]
+}
