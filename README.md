@@ -2,6 +2,10 @@
 
 A one-click local **author-led, full-book writing studio** for Windows x64. Bring your premise, world, characters and creative direction; EmberWriter can propose the outline and draft the whole novel while you edit, redirect and approve every chapter. The application also includes local writing-quality diagnostics, continuity reviews, PDF/EPUB/DOCX publishing tools and offline Windows audiobook narration (WAV/MP3). The first-run fictional demonstration is safely separate from your private library.
 
+## Simplified, tested interface
+
+The desktop starts with Write, Studio, Plan, Analyze and Publish, with less-frequently-used tools behind **More**. Plan is organized into four task groups instead of eleven competing tabs; publishing has six focused stages. At narrow window sizes, Write, Plan and Publish stay directly accessible. A synthetic-only visual smoke test verifies the layout at 1440, 900 and 390 pixels without opening or uploading private manuscripts.
+
 ## What's included
 
 - **Book Production Conductor:** one durable author-led flow from chapter planning through queued draft generation, opt-in independent reader critiques, mandatory author decisions, whole-book editorial checks and publishing handoff. Includes local checkpoint history and a Prompt Context Inspector.
