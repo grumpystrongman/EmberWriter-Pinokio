@@ -1,6 +1,6 @@
 {
   "title": "EmberWriter",
-  "description": "Local-first fiction studio: manuscripts, characters, worldbuilding and local AI",
+  "description": "Author-led fiction studio: write complete books, review every chapter, publish and narrate locally",
   "platform": ["win32"],
   "arch": ["x64"]
 }

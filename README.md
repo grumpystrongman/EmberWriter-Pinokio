@@ -1,6 +1,6 @@
 # EmberWriter for Pinokio
 
-A one-click local fiction-writing studio for Windows x64 with chapters, character sheets, screenplay samples, worldbuilding, an interactive corkboard, revision history, and locally hosted AI models.
+A one-click local **author-led, full-book writing studio** for Windows x64. Bring your premise, world, characters and creative direction; EmberWriter can propose the outline and draft the whole novel while you edit, redirect and approve every chapter. The application also includes local writing-quality diagnostics, continuity reviews, PDF/EPUB/DOCX publishing tools and offline Windows audiobook narration (WAV/MP3). The first-run fictional demonstration is safely separate from your private library.
 
 ## Install with Pinokio
 

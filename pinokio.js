@@ -2,7 +2,7 @@
 module.exports = {
   version: "8.0.0",
   title: "EmberWriter",
-  description: "Local-first fiction studio — separate Demo and Private workspaces",
+  description: "Author-led full-book studio — separate Demo and Private writing libraries",
   menu: async (kernel, info) => {
     for (const [script, title] of [["install.js", "Installing"], ["update.js", "Updating"], ["reset.js", "Rebuilding dependencies"], ["models.js", "Installing writing model"]]) {
       if (info.running(script)) return [{ default: true, text: title, href: script }];
