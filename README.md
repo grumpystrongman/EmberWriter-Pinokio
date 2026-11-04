@@ -2,6 +2,17 @@
 
 A one-click local **author-led, full-book writing studio** for Windows x64. Bring your premise, world, characters and creative direction; EmberWriter can propose the outline and draft the whole novel while you edit, redirect and approve every chapter. The application also includes local writing-quality diagnostics, continuity reviews, PDF/EPUB/DOCX publishing tools and offline Windows audiobook narration (WAV/MP3). The first-run fictional demonstration is safely separate from your private library.
 
+## What's included
+
+- **Book Studio:** author-approved whole-book drafting, background generation, pause/resume, chapter editing and local reader critique.
+- **Revision Workbench:** evidence-backed suggestions and author-approved side-by-side alternatives.
+- **Story Arc Investigator + Dossier:** opt-in local AI analysis of narrative decisions, consequences, relationships and possible foreshadowing, all tied to exact source quotes.
+- **Manuscript Intelligence + Voiceprint Lab:** cross-chapter observations and comparison against your preferred authored prose rhythm.
+- **Production Readiness Gate:** a written author sign-off on draft, continuity, proofreading, Binder and metadata warnings.
+- **Audiobook Workshop:** offline Windows narration for individual chapters **and** a persistent Binder-ordered whole-book queue, pause/resume, restart recovery, and downloadable WAV/MP3 chapter packages.
+
+This is a local-first writing and book-production studio. AI and heuristic observations are advisory; professional grammar certification, studio-quality multi-voice audiobook mastering, and retailer acceptance are not implied. New features are released through the public application repository and installed using **Update** in Pinokio.
+
 ## Install with Pinokio
 
 1. Install Pinokio 8 or later on Windows x64.
