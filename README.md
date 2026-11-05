@@ -1,5 +1,19 @@
 # EmberWriter for Pinokio
 
+## New in RC2: Audio Director (November 2026)
+
+EmberWriter now creates a **separate audiobook-only performance manuscript** with source-linked dialogue, named character voices, editable emotional-delivery cues and a pre-render check that blocks unknown speakers rather than silently switching to the narrator. CMU/IPA pronunciation, natural chapter-heading pauses, and verified incremental neural-audio caching are preserved. **Kokoro expressive emotion remains limited; Fish performance rehearsal is experimental.**
+
+![Audio Director overview](media/rc2/audio-director-overview.png)
+
+![Voice attribution and delivery controls](media/rc2/audio-director-character-casting.png)
+
+**Listen to the original synthetic demo:** [Mara and Ivo (20s)](media/rc2/sample-01-mara-ivo-dialogue.mp3) · [Rescue decision (22s)](media/rc2/sample-02-rescue-decision.mp3) · [Multi-character dialogue (26s)](media/rc2/sample-03-multiple-character-voices.mp3).
+
+[Read the full RC2 Pinokio announcement](docs/RC2-PINOKIO-ANNOUNCEMENT.md) · [Application RC2 notes](https://github.com/grumpystrongman/EmberWriter/blob/main/RELEASE_NOTES_RC2.md)
+
+RC2 is a public **release candidate**, not an approved commercial audiobook. The 70 dialogue passages in the 3-chapter test have assigned speakers (30 editor-suggested assignments pending author review). The new draft recordings still require human listening approval. Full backend suite: **559 passed**; frontend production build: passed. Existing Pinokio users can click **Update** to get the updated source.
+
 A one-click local **author-led, full-book writing studio** for Windows x64. Bring your premise, world, characters and creative direction; EmberWriter can propose the outline and draft the whole novel while you edit, redirect and approve every chapter. The application also includes local writing-quality diagnostics, continuity reviews, PDF/EPUB/DOCX publishing tools and offline Windows audiobook narration (WAV/MP3). The first-run fictional demonstration is safely separate from your private library.
 
 ## Simplified, tested interface
