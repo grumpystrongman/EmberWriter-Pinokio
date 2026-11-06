@@ -4,6 +4,8 @@
 
 EmberWriter now creates a **separate audiobook-only performance manuscript** with source-linked dialogue, named character voices, editable emotional-delivery cues and a pre-render check that blocks unknown speakers rather than silently switching to the narrator. CMU/IPA pronunciation, natural chapter-heading pauses, and verified incremental neural-audio caching are preserved. **Kokoro expressive emotion remains limited; Fish performance rehearsal is experimental.**
 
+![Audiobook Production Studio — seven tools always visible](media/rc2/audio-production-studio.png)
+
 ![Audio Director overview](media/rc2/audio-director-overview.png)
 
 ![Voice attribution and delivery controls](media/rc2/audio-director-character-casting.png)
