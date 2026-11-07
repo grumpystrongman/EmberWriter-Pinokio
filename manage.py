@@ -27,7 +27,15 @@ def copy_verified(source: Path, destination: Path) -> int:
     """Snapshot SQLite through its backup API, and verify every other file."""
     count = 0
     destination.mkdir(parents=True, exist_ok=False)
+    safe_root = source.resolve(strict=True)
     for src in source.rglob("*"):
+        # Reparse points, symlinked files, and NTFS junctions may reference
+        # *other people's files outside this specific author library*.
+        # Failing closed prevents accidental backup exfiltration.
+        if src.is_symlink() or not src.resolve().is_relative_to(safe_root):
+            raise RuntimeError(
+                f"External symlink/reparse point in author data: {src.relative_to(source)}"
+            )
         if not src.is_file() or src.name.endswith(("-wal", "-shm", "-journal")):
             continue
         dst = destination / src.relative_to(source)
