@@ -80,6 +80,14 @@ def main():
         raise RuntimeError("Refusing to test within a real Pinokio author installation")
     if not (ROOT / "app/frontend/dist/index.html").is_file():
         raise RuntimeError("Candidate frontend build missing in test sandbox")
+    # Hosted Pinokio serves API and UI from the SAME loopback origin.
+    # Windows builds used to miss Vite's path rewrite and silently connect
+    # to another user's port-8000 process. Refuse that release artifact.
+    for script in (ROOT / "app/frontend/dist/assets").rglob("*.js"):
+        if b"http://127.0.0.1:8000/api" in script.read_bytes():
+            raise RuntimeError(
+                f"Hosted bundle would contact a different API origin: {script.name}"
+            )
     if not (ROOT / ".installed").is_file():
         raise RuntimeError("QA installation marker missing")
 
