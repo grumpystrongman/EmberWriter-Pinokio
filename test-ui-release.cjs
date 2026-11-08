@@ -37,10 +37,24 @@ async function main() {
         errs.push(response.status() + " " + response.url());
     });
     await page.goto(url, {waitUntil: "domcontentloaded"});
-    await page.waitForTimeout(1400);
     assert(await page.title(), "Missing title");
     const nav = page.locator(".workspace-nav button");
-    assert((await nav.count()) >= 4, "Writing workspace navigation disappeared");
+    try {
+      await page.waitForFunction(
+        () => document.querySelectorAll(".workspace-nav button").length >= 4,
+        null, {timeout: 14000}
+      );
+    } catch (e) {
+      await page.screenshot({
+        path: path.join(root, "qa-ui-startup-failure.png"),
+        animations: "disabled",
+      });
+      const text = (await page.locator("body").innerText()).slice(0, 2600);
+      throw new Error(
+        "Writing navigation failed to load. Visible UI=" + JSON.stringify(text)
+        + "; JS/API errors=" + JSON.stringify(errs) + "; " + e.message
+      );
+    }
     const series = nav.filter({hasText: "Series"});
     assert(await series.count(), "Series workspace is missing");
     await series.first().click();
