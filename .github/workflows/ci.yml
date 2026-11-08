@@ -1,0 +1,33 @@
+name: Pinokio Launcher Safety
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  windows-launcher-contract:
+    runs-on: windows-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Test installation, backups, demo/privacy isolation and safe updates
+        run: python test-release-qualification.py -v
+      - name: Prove SQLite snapshots release live Windows file locks
+        run: python test-deployment.py -v
+      - name: Validate menu and separate opt-in model installation
+        run: node test-menu.js
+      - name: Validate browser acceptance test syntax
+        run: node --check test-ui-release.cjs
+      - name: Validate live dual-server acceptance test syntax
+        run: python -m compileall -q test-live-release.py serve.py manage.py
+      - name: State limitations honestly
+        run: |
+          echo "Static and synthetic contract tests do not replace a fresh Windows or real Pinokio UI installation drill."
