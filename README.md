@@ -1,5 +1,15 @@
 # EmberWriter for Pinokio
 
+> **November 8, 2026 — EmberWriter Author-First Public Preview**  
+> The Series Vault, source-approved Canon Graph, temporal knowledge, Continuity Guardian, Consequence Map, professional Ember research, and Recovery Center are now available in the public application source installed by this Pinokio launcher. Automated Windows verification passed (623 backend tests passed, 2 skipped in the final full local run; synthetic Pinokio private/demo isolation and hosted desktop/mobile UI passed). This is a **public preview, not a certified production or zero-data-loss release**: complete human-edited novel proofing, whole-audiobook listening, and fresh-device Pinokio GUI acceptance remain outstanding. Back up important writing to a separate encrypted drive before beta use.  
+>
+> **[Watch the 10-minute feature tour (1080p MP4)](https://github.com/grumpystrongman/EmberWriter/releases/download/emberwriter-author-first-demo-2026-11-07/EmberWriter-Author-First-10-Minute-Demo.mp4)** · [View the video and captions release](https://github.com/grumpystrongman/EmberWriter/releases/tag/emberwriter-author-first-demo-2026-11-07) · [Pinokio one-click install source](https://github.com/grumpystrongman/EmberWriter-Pinokio)  
+>
+> **Install/update:** In Pinokio, use *Download from URL* and enter `https://github.com/grumpystrongman/EmberWriter-Pinokio`; existing users can use *Update*. **Choose DEMO first** to try the product without using your personal writing. PRIVATE is a separate local library. Optional writing models require separate installation and explicit choice.
+>
+> **Recovery reminder:** Local snapshots are not off-device disaster protection. Configure a verified independent encrypted mirror and test restoration before trusting the preview with irreplaceable books.
+
+
 ## New in RC2: Audio Director (November 2026)
 
 EmberWriter now creates a **separate audiobook-only performance manuscript** with source-linked dialogue, named character voices, editable emotional-delivery cues and a pre-render check that blocks unknown speakers rather than silently switching to the narrator. CMU/IPA pronunciation, natural chapter-heading pauses, and verified incremental neural-audio caching are preserved. **Kokoro expressive emotion remains limited; Fish performance rehearsal is experimental.**
