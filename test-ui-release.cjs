@@ -65,14 +65,27 @@ async function main() {
     assert(await series.count(), "Series workspace is missing");
     await series.first().click();
     await page.locator(".series-desk-heading").waitFor({timeout: 12000});
-    if (!(await page.locator(".series-desk-tabs").count())) {
-      // Brand-new Pinokio installations start with zero universes. Exercise
-      // the real first-run flow rather than expecting a pre-seeded author vault.
-      await page.locator(".series-desk-create input").first()
+    const tabs = page.locator(".series-desk-tabs");
+    // Hydration and the first read of project/series metadata are async.
+    // Do not mistake an existing but not-yet-loaded universe for "no series".
+    await Promise.race([
+      tabs.waitFor({timeout: 10000}).catch(() => {}),
+      page.locator(".series-desk-select option").first()
+        .waitFor({timeout: 10000}).catch(() => {}),
+    ]);
+    try {
+      await tabs.waitFor({timeout: 8000});
+    } catch (_) {
+      // Fresh installation starts empty. Open the creation details explicitly,
+      // since they can collapse if the async listing finishes during the wait.
+      const details = page.locator(".series-desk-create details").first();
+      if (!(await details.evaluate(element => element.open)))
+        await details.locator("summary").click();
+      await details.locator("input").first()
         .fill("QA Synthetic Lantern Universe");
       await page.getByRole("button", {name: "Create series"}).click();
+      await tabs.waitFor({timeout: 12000});
     }
-    await page.locator(".series-desk-tabs").waitFor({timeout: 12000});
     const tabs = await page.locator(".series-desk-tabs button").allTextContents();
     for (const title of ["Continuity", "Consequences", "Ask Ember"]) {
       assert(tabs.some(label => label.includes(title)), "Missing author tool: " + title);
