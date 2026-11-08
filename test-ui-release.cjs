@@ -32,6 +32,12 @@ async function main() {
     });
     const errs = [];
     page.on("pageerror", e => errs.push("JS: " + e.message));
+    page.on("request", request => {
+      const parsed = new URL(request.url());
+      if (parsed.pathname.startsWith("/api/") && parsed.origin !== url) {
+        errs.push("API crossed into another server: " + request.url());
+      }
+    });
     page.on("response", response => {
       if (response.status() >= 400 && response.url().includes("/api/"))
         errs.push(response.status() + " " + response.url());
