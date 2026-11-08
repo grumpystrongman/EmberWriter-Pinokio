@@ -58,6 +58,14 @@ async function main() {
     const series = nav.filter({hasText: "Series"});
     assert(await series.count(), "Series workspace is missing");
     await series.first().click();
+    await page.locator(".series-desk-heading").waitFor({timeout: 12000});
+    if (!(await page.locator(".series-desk-tabs").count())) {
+      // Brand-new Pinokio installations start with zero universes. Exercise
+      // the real first-run flow rather than expecting a pre-seeded author vault.
+      await page.locator(".series-desk-create input").first()
+        .fill("QA Synthetic Lantern Universe");
+      await page.getByRole("button", {name: "Create series"}).click();
+    }
     await page.locator(".series-desk-tabs").waitFor({timeout: 12000});
     const tabs = await page.locator(".series-desk-tabs button").allTextContents();
     for (const title of ["Continuity", "Consequences", "Ask Ember"]) {
