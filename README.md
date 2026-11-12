@@ -1,5 +1,13 @@
 # EmberWriter for Pinokio
 
+## Market Directory and Submission Studio
+
+Click **Update** in Pinokio, then open **Submit → Market Directory**. Search 2,804 book publishers and filter researched listings by genre, submission route, guidelines availability, and packet availability. Start a packet from a publisher with bundled settings, or review the official requirements when a listing needs confirmation. EmberWriter keeps its private authorship review out of the submission ZIP.
+
+Publisher coverage varies. The directory flags listings that need research and identifies agent-only routes where known. EmberWriter checks tracked guidelines weekly while the app runs.
+
+[See the application update](https://github.com/grumpystrongman/EmberWriter/pull/129)
+
 > **November 8, 2026 — EmberWriter Author-First Public Preview**  
 > The Series Vault, source-approved Canon Graph, temporal knowledge, Continuity Guardian, Consequence Map, professional Ember research, and Recovery Center are now available in the public application source installed by this Pinokio launcher. Automated Windows verification passed (623 backend tests passed, 2 skipped in the final full local run; synthetic Pinokio private/demo isolation and hosted desktop/mobile UI passed). This is a **public preview, not a certified production or zero-data-loss release**: complete human-edited novel proofing, whole-audiobook listening, and fresh-device Pinokio GUI acceptance remain outstanding. Back up important writing to a separate encrypted drive before beta use.  
 >
