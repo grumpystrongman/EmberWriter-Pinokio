@@ -1,6 +1,6 @@
 {
   "title": "EmberWriter",
-  "description": "Author-led fiction studio: write complete books, review every chapter, publish and narrate locally",
+  "description": "EmberWriter 0.16.0 RC1 public preview: local writing, series intelligence, editorial review and publishing",
   "platform": ["win32"],
   "arch": ["x64"]
 }
