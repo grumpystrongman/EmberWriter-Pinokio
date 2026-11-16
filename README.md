@@ -1,5 +1,12 @@
 # EmberWriter for Pinokio
 
+## Current public preview: EmberWriter 0.16.0 RC1 (November 2026)
+
+Stage 2 series intelligence, Scene Director, reviewable revisions, accessibility fixes and release-safety protections. **Public prerelease, not a 5/5-certified stable release.** Make an off-device backup of PRIVATE writing before selecting **Update**. Use DEMO to explore.
+
+**Install this preview:** Pinokio → Download from URL → enter this repository → select branch `release/0.16.0-rc.1`. This preview pins the application to tag `preview-0.16.0-rc.1`, while the default launcher remains independent. [RC1 announcement and screenshot gallery](docs/RC1-PINOKIO-ANNOUNCEMENT.md) | [Eight screenshots and captions](media/rc1/README.md) | [0.16.0 RC1 Pinokio notes](RELEASE_NOTES_0.16.0_RC1.md) | [Application notes](https://github.com/grumpystrongman/EmberWriter/blob/main/RELEASE_NOTES_0.16.0_RC1.md)
+
+
 ## Market Directory and Submission Studio
 
 Click **Update** in Pinokio, then open **Submit → Market Directory**. Search 2,804 book publishers and filter researched listings by genre, submission route, guidelines availability, and packet availability. Start a packet from a publisher with bundled settings, or review the official requirements when a listing needs confirmation. EmberWriter keeps its private authorship review out of the submission ZIP.
